@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.6"
+
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toolbar Title"
+       android:textSize="20sp"
+        android:textColor="#F5DF65"
+       android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.2"
+
+        android:layout_height="match_parent">
+
+    <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2500"
+           android:textSize="20sp"
+
+
+           android:textColor="#F5DF65"
+           android:layout_gravity="center"
+           android:id="@+id/txt_totalbalance" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.2"
+
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:src="@drawable/gold_coin"
+        />
+
+</LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
+
+
+
+
+

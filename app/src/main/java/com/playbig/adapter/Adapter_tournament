@@ -1,0 +1,83 @@
+/*
+package com.playbig.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+import com.playbig.R;
+
+import java.util.ArrayList;
+
+*/
+/**
+ * Created by User on 2/11/2016.
+ *//*
+
+public class Adapter_tournament extends ReercyclerView.Adapt<Adaptere.ViewHolder_FindRid> {
+    private ArrayList<PostList> itemsData;
+    private LayoutInflater inflater;
+    private static Context ct;
+
+    public Adapter_FindRide(Context ctxt, ArrayList<PostList> itemsData) {
+        inflater = LayoutInflater.from(ctxt);
+        this.itemsData = itemsData;
+        ct = ctxt;
+    }
+
+    public void addItems(ArrayList<PostList> feedItemList) {
+        if (itemsData == null) {
+            itemsData = new ArrayList<>();
+        }
+        itemsData.addAll(feedItemList);
+        notifyDataSetChanged();
+    }
+
+    public ArrayList<PostList> getData() {
+        return itemsData;
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        View itemLayoutView = inflater.inflate(R.layout.raw_profile_single, null);
+
+        // create ViewHolder
+
+        ViewHolder viewHolder = new ViewHolder(itemLayoutView);
+
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+
+        holder.tv_time.setText(itemsData.get(position).getVMainDepartureTime());
+        holder.tv_created_at.setText(itemsData.get(position).getCreated_at());
+        holder.tv_route.setText(itemsData.get(position).getVMainDeparture() + " --> " + itemsData.get(position).getVMainArrival());
+        holder.tv_user_name.setText(itemsData.get(position).getVFirstName() + " " + itemsData.get(position).getVLastName());
+        holder.tv_price.setText(itemsData.get(position).getVMainDistance());
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+
+        public TextView tv_time, tv_route, tv_user_name, tv_price, tv_created_at;
+        public RoundedImageView img_user_pro_pic;
+
+
+        public ViewHolder(View itemLayoutView) {
+            super(itemLayoutView);
+            tv_time = (TextView) itemLayoutView.findViewById(R.id.tv_time);
+            tv_route = (TextView) itemLayoutView.findViewById(R.id.tv_route);
+            tv_user_name = (TextView) itemLayoutView.findViewById(R.id.tv_user_name);
+            tv_price = (TextView) itemLayoutView.findViewById(R.id.tv_price);
+            img_user_pro_pic = (RoundedImageView) itemLayoutView.findViewById(R.id.img_user_pro_pic);
+            tv_created_at = (TextView) itemLayoutView.findViewById(R.id.tv_created_at);
+        }
+    }
+
+    @Override
+}
+*/

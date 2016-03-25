@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+        <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/custom_toolbar" />
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+</android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.40"
+        android:layout_height="0dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+            <com.playbig.customview.CircularImageView
+                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:id="@+id/Profile_picture"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_userprofile"
+               />
+      </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.65"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:layout_height="0dp">
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:textSize="14sp"
+                    android:text="Total Lost"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:gravity="center"
+                    android:text="5000"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.25"
+                android:layout_height="0dp">
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:textSize="14sp"
+                    android:text="Total Played"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:text="5000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                android:layout_weight="0.25"
+                android:layout_height="0dp">
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:textSize="14sp"
+                    android:text="In Play"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:layout_weight="0.70"
+                    android:text="5000"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                android:layout_weight="0.25"
+                android:layout_height="0dp">
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:textSize="14sp"
+                    android:text="Total Won"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:gravity="center"
+
+                    android:text="5000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.60"
+        android:layout_height="0dp">
+
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:fillViewport="false" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="horizontal" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>

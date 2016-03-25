@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.playbig" >
+
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.playbig.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+
+
+
+
+
+        </activity>
+
+        <activity
+            android:name="com.playbig.Activity.Activity_myprofile"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+        </activity>
+
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_splash"
+
+             >
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.playbig.Activity.Activity_quickplaceabet"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+
+
+            </activity>
+        <activity
+            android:name="com.playbig.Activity.Activity_Login"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+
+
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.playbig.Activity.Activity_quickranking"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_aboutus"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_login_Google"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+
+
+
+
+
+        </activity>
+
+        <activity
+            android:name="com.playbig.Activity.Activity_terms"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_tournament"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_tournamentplaceabet"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+
+        <activity
+            android:name="com.playbig.Activity.Activity_tournamentranking"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-relatedProductData
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"/>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider218592908494107"
+            android:exported="true" />
+
+
+
+
+
+
+    </application>
+
+</manifest>

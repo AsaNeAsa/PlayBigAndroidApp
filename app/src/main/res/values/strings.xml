@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PlayBig</string>
+
+
+
+
+    <string name="action_settings">Home</string>
+
+    <string name="my_profile">My Profile</string>
+    <string name="aboutus">About us</string>
+
+
+
+    <string name="error_general">Oops..something went wrong. Please try again later.</string>
+    <string name="error_internet">Please check your internet connection and try again.</string>
+    <string name="title_activity_myprofile">My Profile</string>
+    <string name="title_activity_terms">Terms of Use</string>
+    <string name="title_activity_aboutus">Aboutus</string>
+
+    <string name="title_activity_quickplacebet">Place a bet</string>
+
+    <string name="title_activity_quickRanking">Ranking</string>
+
+    <string name="title_activity_TournamentRanking">Ranking</string>
+
+    <string name="title_activity_Main">Welcome User</string>
+
+
+    <string name="Terms_condition">Terms of Use</string>
+
+    <string name="Logout">Logout</string>
+
+    <string name="txt_wait_line">Loading</string>
+    <string name="app_id">218592908494107</string>
+
+
+    <string name="google_app_id">962768396149</string>
+
+
+    <string-array name="tournament">
+    <item>icc world cup</item>
+    <item>ipl</item>
+    <item>Asia cup</item>
+    <item>Champions Trophy</item>
+
+
+    </string-array>
+</resources>

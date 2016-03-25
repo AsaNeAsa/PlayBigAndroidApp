@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CircularImageView for custom shape -->
+    <declare-styleable name="CircularImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="civ_border" format="boolean" />
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="civ_border_color" format="color" />
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="civ_border_width" format="dimension" />
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="civ_selector" format="boolean" />
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="civ_selector_color" format="color" />
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="civ_selector_stroke_color" format="color" />
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="civ_selector_stroke_width" format="dimension" />
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="civ_shadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircularImageViewStyle">
+        <attr name="circularImageViewDefault" format="reference" />
+    </declare-styleable>
+
+    <!-- DiscreteSeekBar specific attributes -->
+    <attr name="discreteSeekBarStyle" format="reference" />
+
+    <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_min" format="integer|dimension" />
+        <attr name="dsb_max" format="integer|dimension" />
+        <attr name="dsb_value" format="integer|dimension" />
+        <attr name="dsb_mirrorForRtl" format="boolean" />
+        <attr name="dsb_allowTrackClickToDrag" format="boolean" />
+        <attr name="dsb_progressColor" format="color|reference" />
+        <attr name="dsb_trackColor" format="color|reference" />
+        <attr name="dsb_indicatorTextAppearance" format="reference" />
+        <attr name="dsb_indicatorColor" format="color|reference" />
+        <attr name="dsb_indicatorElevation" format="dimension" />
+        <attr name="dsb_indicatorFormatter" format="string|reference" />
+        <attr name="dsb_rippleColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="RangeBar">
+        <attr name="tickCount" format="integer" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="barWeight" format="dimension" />
+        <attr name="barColor" format="reference|color" />
+        <attr name="connectingLineWeight" format="dimension" />
+        <attr name="connectingLineColor" format="reference|color" />
+        <attr name="thumbRadius" format="dimension" />
+        <attr name="thumbImageNormal" format="reference" />
+        <attr name="thumbImagePressed" format="reference" />
+        <attr name="thumbColorNormal" format="reference|color" />
+        <attr name="thumbColorPressed" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeFlingAdapterView">
+        <attr name="SwipeFlingStyle" format="reference"/>
+        <attr name="rotation_degrees" format="float"/>
+        <attr name="min_adapter_stack" format="integer"/>
+        <attr name="max_visible" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardContainer">
+    <attr name="android:gravity"/>
+    <attr name="orientation" format="enum">
+        <enum name="ordered" value="0"/>
+        <enum name="disordered" value="1"/>
+    </attr>
+    </declare-styleable>
+
+        <declare-styleable name="AppTextView">
+            <attr name="typeface" format="string" />
+        </declare-styleable>
+</resources>

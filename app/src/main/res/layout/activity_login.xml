@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B9464"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1.00"
+            android:orientation="vertical"
+            >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.30"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/scale_5dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                       android:id="@+id/login_img_logo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentTop="true"
+                       android:layout_centerHorizontal="true"
+                       android:src="@drawable/gold_coin" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.70"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                   <TextView
+                       android:id="@+id/txt_title"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/login_img_logo"
+                       android:layout_centerHorizontal="true"
+                       android:ems="15"
+                       android:gravity="center"
+                       android:textSize="@dimen/textsize_20sp"
+                       android:text="Your personal taste is beautiful and unique! Help us get to know you better"
+                       android:textColor="#FFEFEF" />
+
+</LinearLayout>
+
+      </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+               >
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ly_loginfb_second_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/custom_facebook_shape"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/scale_20dp"
+                    android:layout_marginRight="@dimen/scale_10dp"
+                    android:paddingBottom="@dimen/scale_10dp"
+                    android:paddingLeft="@dimen/scale_30dp"
+                    android:paddingRight="@dimen/scale_30dp"
+                    android:paddingTop="@dimen/scale_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/scale_20dp"
+                        android:src="@drawable/facebook"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/scale_20dp"
+                        android:gravity="center"
+                        android:text="|"
+                        android:textColor="#425792"
+                        android:textSize="@dimen/textsize_20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login with Facebook"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_20sp" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ly_login_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/scale_20dp"
+                    android:layout_marginRight="@dimen/scale_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/scale_30dp"
+                    android:background="@drawable/custom_google_shape"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/scale_10dp"
+                    android:paddingLeft="@dimen/scale_30dp"
+                    android:paddingRight="@dimen/scale_30dp"
+                    android:paddingTop="@dimen/scale_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/scale_20dp"
+                        android:src="@drawable/gogle_icon"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/scale_20dp"
+                        android:gravity="center"
+                        android:text="|"
+                        android:textColor="#425792"
+                        android:textSize="@dimen/textsize_20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login with Google"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_20sp" />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.30"
+                    android:orientation="vertical"
+                  >
+
+
+
+               </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
